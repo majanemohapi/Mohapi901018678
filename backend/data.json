@@ -32,7 +32,7 @@
       "name": "Cappuccino",
       "description": "Classic espresso with steamed milk and foam",
       "price": 3.5,
-      "quantity": 35,
+      "quantity": 31,
       "initialQuantity": 35,
       "category": "Beverage"
     }
@@ -68,6 +68,13 @@
       "customerId": 2,
       "quantity": 35,
       "total": 131.25
+    },
+    {
+      "id": 1757766425706,
+      "productId": 4,
+      "customerId": 1,
+      "quantity": 4,
+      "total": 14
     }
   ]
 }
