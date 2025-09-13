@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mohapi901018678/static/css/main.db3effe3.css",
+    "main.js": "/Mohapi901018678/static/js/main.d3f69c49.js",
+    "static/js/453.4619bec3.chunk.js": "/Mohapi901018678/static/js/453.4619bec3.chunk.js",
+    "index.html": "/Mohapi901018678/index.html",
+    "main.db3effe3.css.map": "/Mohapi901018678/static/css/main.db3effe3.css.map",
+    "main.d3f69c49.js.map": "/Mohapi901018678/static/js/main.d3f69c49.js.map",
+    "453.4619bec3.chunk.js.map": "/Mohapi901018678/static/js/453.4619bec3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db3effe3.css",
+    "static/js/main.d3f69c49.js"
+  ]
+}
