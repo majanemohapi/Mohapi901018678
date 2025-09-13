@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Croissant",
+      "description": "Flaky buttery French pastry",
+      "price": 2.5,
+      "quantity": 30,
+      "initialQuantity": 30,
+      "category": "Bakery"
+    },
+    {
+      "id": 2,
+      "name": "Iced Latte",
+      "description": "Chilled espresso with milk and ice",
+      "price": 3.75,
+      "quantity": 40,
+      "initialQuantity": 40,
+      "category": "Beverage"
+    },
+    {
+      "id": 3,
+      "name": "Blueberry Scones",
+      "description": "Sweet scones filled with fresh blueberries",
+      "price": 3,
+      "quantity": 25,
+      "initialQuantity": 9,
+      "category": "Bakery"
+    },
+    {
+      "id": 4,
+      "name": "Cappuccino",
+      "description": "Classic espresso with steamed milk and foam",
+      "price": 3.5,
+      "quantity": 35,
+      "initialQuantity": 35,
+      "category": "Beverage"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Majane Mohapi",
+      "email": "majanemohapi@gmai.com"
+    },
+    {
+      "id": 2,
+      "name": "Mpho Molato",
+      "email": "mphomolato@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Mpoetsi Mmhogo",
+      "email": "mpoetsimmhogo@gmai.com"
+    }
+  ],
+  "sales": [
+    {
+      "id": "d308",
+      "productId": 1,
+      "customerId": 2,
+      "quantity": 13,
+      "total": 32.5
+    },
+    {
+      "id": "3748",
+      "productId": 2,
+      "customerId": 2,
+      "quantity": 35,
+      "total": 131.25
+    }
+  ]
+}

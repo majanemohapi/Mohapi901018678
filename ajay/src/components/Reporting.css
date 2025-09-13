@@ -1,0 +1,31 @@
+.reporting-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.reporting-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reporting-table th,
+.reporting-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.reporting-table th {
+  background-color: #f3f4f6;
+}
+
+.low-stock {
+  color: #dc2626; 
+  font-weight: bold;
+}
+
+.normal-stock {
+  color: #16a34a; 
+}

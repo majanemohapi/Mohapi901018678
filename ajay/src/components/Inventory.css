@@ -1,0 +1,41 @@
+.btn {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+.inventory-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.inventory-form input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inventory-form .btn-save {
+  grid-column: span 2;
+  background-color: #34495e;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th, .inventory-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

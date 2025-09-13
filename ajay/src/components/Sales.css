@@ -1,0 +1,56 @@
+.sales-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.sales-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sales-select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  flex: 1;
+}
+
+.sales-button {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.sales-button:hover {
+  background-color: #2c980b;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table th, .sales-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sales-table th {
+  background-color: #f3f4f6;
+}
+.sales-select {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.sales-select option {
+  display: block; 
+}

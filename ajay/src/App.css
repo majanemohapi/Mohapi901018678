@@ -1,0 +1,51 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #bb71d6;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.module-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f2937; 
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+
+.dashboard-card {
+  background-color: #faf8f8e6;
+  padding: 2rem; /* bigger for balance */
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-content {
+  flex: 1;
+  background: #ec830b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
