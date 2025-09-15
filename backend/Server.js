@@ -14,7 +14,7 @@ app.use(express.json());
 const readDB = () => JSON.parse(fs.readFileSync(DB_FILE, "utf-8"));
 const writeDB = (data) => fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 
-// ------------------ PRODUCTS ------------------
+//  PRODUCTS 
 app.get("/products", (req, res) => {
   const db = readDB();
   res.json(db.products);
@@ -44,7 +44,7 @@ app.delete("/products/:id", (req, res) => {
   res.json({ success: true });
 });
 
-// ------------------ CUSTOMERS ------------------
+//  CUSTOMERS 
 app.get("/customers", (req, res) => {
   const db = readDB();
   res.json(db.customers);
@@ -101,7 +101,7 @@ app.post("/sales", (req, res) => {
 });
 
 
-// ------------------ DASHBOARD SUMMARY ------------------
+//  DASHBOARD SUMMARY 
 app.get("/dashboard", (req, res) => {
   const db = readDB();
   const totalProducts = db.products.length;
@@ -110,7 +110,7 @@ app.get("/dashboard", (req, res) => {
   res.json({ totalProducts, lowStock, totalSales });
 });
 
-// ------------------ INVENTORY REPORTING ------------------
+// INVENTORY REPORTING 
 app.get("/reporting", (req, res) => {
   const db = readDB();
   const lowStockThreshold = 5;
