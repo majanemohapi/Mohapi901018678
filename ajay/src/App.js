@@ -43,7 +43,6 @@ function App() {
     [sales]
   );
 
-  // ✅ Robust recordSale with optimistic update
   const recordSale = async (productId, customerId, quantity) => {
     const pid = Number(productId);
     const cid = Number(customerId);
@@ -61,7 +60,7 @@ function App() {
     const total = product.price * qty;
     const updatedQuantity = Number(product.quantity) - qty;
 
-    // Create a temporary sale so it shows in the UI instantly
+  
     const tempId = `temp-${Date.now()}`;
     const tempSale = {
       id: tempId,
@@ -74,13 +73,13 @@ function App() {
 
     const originalQuantity = product.quantity;
 
-    // Optimistically update UI
+  
     setProducts((prev) =>
       prev.map((p) => (Number(p.id) === pid ? { ...p, quantity: updatedQuantity } : p))
     );
     setSales((prev) => [...prev, tempSale]);
 
-    // 1) POST sale
+  
     let savedSale;
     try {
       const saleRes = await fetch(`${API}/sales`, {
@@ -92,7 +91,7 @@ function App() {
       savedSale = await saleRes.json();
     } catch (err) {
       console.error("Failed to save sale:", err);
-      // Revert optimistic UI
+    
       setProducts((prev) =>
         prev.map((p) => (Number(p.id) === pid ? { ...p, quantity: originalQuantity } : p))
       );
@@ -101,10 +100,10 @@ function App() {
       return;
     }
 
-    // Replace temp sale with real sale
+    
     setSales((prev) => prev.map((s) => (s.id === tempId ? savedSale : s)));
 
-    // 2) PATCH product quantity
+  
     try {
       const patchRes = await fetch(`${API}/products/${pid}`, {
         method: "PATCH",
